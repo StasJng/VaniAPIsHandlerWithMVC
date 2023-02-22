@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Payment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="merchantid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stan" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="termtxndatetime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="txnAmount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fee" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IssuerID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tranID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bankID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mac" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respUrl" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PaymentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PaymentResult" type="tns:reponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="reponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="responsecode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tranid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="descriptionvn" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="descriptionen" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="url" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mac" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="merchantId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="clientIP" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="deviceId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="environment" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cardScheme" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="enable3DSecure" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="datakey" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="napaskey" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="PaymentNapasV3">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="merchantid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stan" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="termtxndatetime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="txnAmount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fee" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IssuerID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tranID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="useToken" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bankID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mac" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respUrl" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PaymentNapasV3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PaymentNapasV3Result" type="tns:reponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="comfirmPayment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="merchantcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tranid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="txnAmount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="confirmCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mackey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="comfirmPaymentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="comfirmPaymentResult" type="tns:reponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getPaymentStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tranid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="merchantcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mackey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getPaymentStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getPaymentStatusResult" type="tns:reponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="paymentVisaMaster">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="merchantid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stan" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="termtxndatetime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="txnAmount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fee" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="firstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lastName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cusEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tranNote" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IssuerID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tranID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bankID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mac" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respUrl" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="paymentVisaMasterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="paymentVisaMasterResult" type="tns:reponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="paymentVisaMasterVer2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="merchantid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stan" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="termtxndatetime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="txnAmount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fee" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="currency" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="firstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lastName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cusEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tranNote" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IssuerID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tranID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bankID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mac" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="respUrl" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="paymentVisaMasterVer2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="paymentVisaMasterVer2Result" type="tns:reponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCardNumberByTransactionId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="transactionId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCardNumberByTransactionIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getCardNumberByTransactionIdResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="PaymentSoapIn">
+    <wsdl:part name="parameters" element="tns:Payment" />
+  </wsdl:message>
+  <wsdl:message name="PaymentSoapOut">
+    <wsdl:part name="parameters" element="tns:PaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="PaymentNapasV3SoapIn">
+    <wsdl:part name="parameters" element="tns:PaymentNapasV3" />
+  </wsdl:message>
+  <wsdl:message name="PaymentNapasV3SoapOut">
+    <wsdl:part name="parameters" element="tns:PaymentNapasV3Response" />
+  </wsdl:message>
+  <wsdl:message name="comfirmPaymentSoapIn">
+    <wsdl:part name="parameters" element="tns:comfirmPayment" />
+  </wsdl:message>
+  <wsdl:message name="comfirmPaymentSoapOut">
+    <wsdl:part name="parameters" element="tns:comfirmPaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="getPaymentStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:getPaymentStatus" />
+  </wsdl:message>
+  <wsdl:message name="getPaymentStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:getPaymentStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="paymentVisaMasterSoapIn">
+    <wsdl:part name="parameters" element="tns:paymentVisaMaster" />
+  </wsdl:message>
+  <wsdl:message name="paymentVisaMasterSoapOut">
+    <wsdl:part name="parameters" element="tns:paymentVisaMasterResponse" />
+  </wsdl:message>
+  <wsdl:message name="paymentVisaMasterVer2SoapIn">
+    <wsdl:part name="parameters" element="tns:paymentVisaMasterVer2" />
+  </wsdl:message>
+  <wsdl:message name="paymentVisaMasterVer2SoapOut">
+    <wsdl:part name="parameters" element="tns:paymentVisaMasterVer2Response" />
+  </wsdl:message>
+  <wsdl:message name="getCardNumberByTransactionIdSoapIn">
+    <wsdl:part name="parameters" element="tns:getCardNumberByTransactionId" />
+  </wsdl:message>
+  <wsdl:message name="getCardNumberByTransactionIdSoapOut">
+    <wsdl:part name="parameters" element="tns:getCardNumberByTransactionIdResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="Payment">
+      <wsdl:input message="tns:PaymentSoapIn" />
+      <wsdl:output message="tns:PaymentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PaymentNapasV3">
+      <wsdl:input message="tns:PaymentNapasV3SoapIn" />
+      <wsdl:output message="tns:PaymentNapasV3SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="comfirmPayment">
+      <wsdl:input message="tns:comfirmPaymentSoapIn" />
+      <wsdl:output message="tns:comfirmPaymentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getPaymentStatus">
+      <wsdl:input message="tns:getPaymentStatusSoapIn" />
+      <wsdl:output message="tns:getPaymentStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="paymentVisaMaster">
+      <wsdl:input message="tns:paymentVisaMasterSoapIn" />
+      <wsdl:output message="tns:paymentVisaMasterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="paymentVisaMasterVer2">
+      <wsdl:input message="tns:paymentVisaMasterVer2SoapIn" />
+      <wsdl:output message="tns:paymentVisaMasterVer2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getCardNumberByTransactionId">
+      <wsdl:input message="tns:getCardNumberByTransactionIdSoapIn" />
+      <wsdl:output message="tns:getCardNumberByTransactionIdSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Payment">
+      <soap:operation soapAction="http://tempuri.org/Payment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PaymentNapasV3">
+      <soap:operation soapAction="http://tempuri.org/PaymentNapasV3" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="comfirmPayment">
+      <soap:operation soapAction="http://tempuri.org/comfirmPayment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPaymentStatus">
+      <soap:operation soapAction="http://tempuri.org/getPaymentStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paymentVisaMaster">
+      <soap:operation soapAction="http://tempuri.org/paymentVisaMaster" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paymentVisaMasterVer2">
+      <soap:operation soapAction="http://tempuri.org/paymentVisaMasterVer2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCardNumberByTransactionId">
+      <soap:operation soapAction="http://tempuri.org/getCardNumberByTransactionId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Payment">
+      <soap12:operation soapAction="http://tempuri.org/Payment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PaymentNapasV3">
+      <soap12:operation soapAction="http://tempuri.org/PaymentNapasV3" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="comfirmPayment">
+      <soap12:operation soapAction="http://tempuri.org/comfirmPayment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPaymentStatus">
+      <soap12:operation soapAction="http://tempuri.org/getPaymentStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paymentVisaMaster">
+      <soap12:operation soapAction="http://tempuri.org/paymentVisaMaster" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paymentVisaMasterVer2">
+      <soap12:operation soapAction="http://tempuri.org/paymentVisaMasterVer2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCardNumberByTransactionId">
+      <soap12:operation soapAction="http://tempuri.org/getCardNumberByTransactionId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://localhost:8098/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://localhost:8098/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

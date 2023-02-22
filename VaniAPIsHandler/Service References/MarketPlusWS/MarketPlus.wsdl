@@ -1,0 +1,3162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="PaymentBookingHotel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="memberid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ipurseid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="transnote" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="chanelid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="portalid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="order_id" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="acceptancepointid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PaymentBookingHotelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PaymentBookingHotelResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Payment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="memberid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ipurseid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="transnote" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="chanelid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="portalid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="order_id" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="acceptancepointid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PaymentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PaymentResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PaymentNoSMS_Email">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="memberid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ipurseid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="transnote" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="chanelid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="portalid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="order_id" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="acceptancepointid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PaymentNoSMS_EmailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PaymentNoSMS_EmailResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CustomerReversal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="transactionId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="reversalby" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CustomerReversalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerReversalResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PartnerReversal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="transactionId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="reversalby" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PartnerReversalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PartnerReversalResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BlockPoint">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subciberId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="ipurseid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="transnote" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="portalid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="promotionid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="partnerId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BlockPointResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BlockPointResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MemberRegistration">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="info" type="tns:MemberInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="MemberInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="member_Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="portal_Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="epassword" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="full_name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="sex" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="id_Card" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="address" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="location_Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="birth_Day" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="job" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="educational" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="birth_Place" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nationality" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="company" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="company_Address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="bank_Account" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="bank_Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="is_Actived" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="active_Code" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="actived_On" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="actived_By" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="registration_On" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="marriage" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="group_Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="registration_Channel" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="noteJson" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="sub_Location_Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cardid_Issueon" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="cardid_Place" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="main_address" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="partner_id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="avatar" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="fb_id" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="mobile_active" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="email_active" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="has_wallet" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="social_type" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="gg_id" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="MemberRegistrationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MemberRegistrationResult" type="tns:DefaultResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DefaultResponseInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="errorcode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="OpenIdRegistration">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="info" type="tns:OpenIdMemberInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="OpenIdMemberInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="member_id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="portal_id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="epassword" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="full_name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="sex" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="id_card" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="address" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="location_id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="birth_day" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="job" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="educational" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="birth_place" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nationality" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="company" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="company_address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="bank_account" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="bank_name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="is_actived" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="active_code" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="actived_on" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="actived_by" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="registration_on" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="marriage" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="group_id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="registration_channel" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="notejson" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="sub_location_id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cardid_issueon" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="cardid_place" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="main_address" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="partner_id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="avatar" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="fb_id" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="mobile_active" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="email_active" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="send_verifyon" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="email_verifyon" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="has_wallet" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="social_type" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="gg_id" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="OpenIdRegistrationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OpenIdRegistrationResult" type="tns:DefaultResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyRegistration">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="verifyCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyRegistrationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerifyRegistrationResult" type="tns:DefaultResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PartnerRegistration">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="partnerid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PartnerRegistrationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PartnerRegistrationResult" type="tns:DefaultResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangePwd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="memberid" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="currentpwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="newpwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangePwdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChangePwdResult" type="tns:DefaultResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InqueryBalance">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subcriberid" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ismember" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InqueryBalanceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InqueryBalanceResult" type="tns:InquiryBanlanceRqInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="InquiryBanlanceRqInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="mti" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="lmsPCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="partnerId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="subscriberId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="termTxnDateTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mac" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="lmsRespCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="hostTxnDateTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="transId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="balanceArea" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="message" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="OfflinePaymentProcess">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="memberid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="fee" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="transnote" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="chanelid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="order_id" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="portalid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="partnerid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="acceptancepointid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="accountid" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="accountname" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OfflinePaymentProcessResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OfflinePaymentProcessResult" type="tns:OfflinePaymentResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="OfflinePaymentResponse">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="errorCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="orderID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="transactionIDs" type="tns:ArrayOfInt" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="OfflinePromotionByPaymentMoney">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="memberid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="transnote" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="chanelid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="order_id" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="portalid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="partnerid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="acceptancepointid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="accountid" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="accountname" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="promotionid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="isagreement" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OfflinePromotionByPaymentMoneyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OfflinePromotionByPaymentMoneyResult" type="tns:OfflinePaymentMonenyResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="OfflinePaymentMonenyResponse">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="errorCode" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="point" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="orderID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="transactionIDs" type="tns:ArrayOfInt" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TransactionFee">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="trans_type" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TransactionFeeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TransactionFeeResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Tranfer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="srcSubcriberId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DesSubcriberId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bonusId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="transNote" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="chanelid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TranferResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TranferResult" type="tns:TranferResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TranferResponseInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="errorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="transactionId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="fee" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="balancearr" type="tns:ArrayOfBalanceAreaInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfBalanceAreaInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="balanceAreaInfo" nillable="true" type="tns:balanceAreaInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="balanceAreaInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="bonusBal_hir" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="bonusBal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="bonusId" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CardDeposit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subcriberId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="serial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pinNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cardType" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="chanelId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="transNote" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CardDepositResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CardDepositResult" type="tns:CardDepositRpInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CardDepositRpInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="errorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="transactionId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="fee" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="balancearr" type="tns:ArrayOfBalanceAreaInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="PayOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subcriberId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ordercode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="transNote" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="chanelId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="portalId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PayOrderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PayOrderResult" type="tns:OrderPaymentRpInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="OrderPaymentRpInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="errorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ordercode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="fee" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="balancearr" type="tns:ArrayOfBalanceAreaInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetDealPrice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="voucherPartnerId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDealPriceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDealPriceResult" type="tns:DealPriceInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DealPriceInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="status" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="voucher_partner_id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="original_price" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="voucher_price" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="saled" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="quantity" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="PayOnlineBanking">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subcriberId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orderCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="transNote" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="urlRedirect" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="feeAmount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="bankId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="chanelId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="portalId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="merchantCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PayOnlineBankingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PayOnlineBankingResult" type="tns:OrderBankOnlinePayRespone" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="OrderBankOnlinePayRespone">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="errorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ordercode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="fee" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="urlRedirect" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="transactionId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="moreData" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="PayOnlineBankingV3">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subcriberId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orderCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="transNote" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="urlRedirect" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="feeAmount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="bankId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="chanelId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="portalId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="merchantCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="useToken" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PayOnlineBankingV3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PayOnlineBankingV3Result" type="tns:OrderBankOnlinePayRespone" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveNAPASToken">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="memberId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RemoveNAPASTokenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RemoveNAPASTokenResult" type="tns:DefaultResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PayOnlineBankingV2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subcriberId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orderCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="transNote" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="urlRedirect" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="feeAmount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="bankId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="chanelId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="portalId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="merchantCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PayOnlineBankingV2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PayOnlineBankingV2Result" type="tns:OrderBankOnlinePayRespone" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PayOnlineVisaMaster">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subcriberId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orderCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="transNote" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="urlRedirect" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="feeAmount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="bankId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="chanelId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="portalId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="merchantCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PayOnlineVisaMasterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PayOnlineVisaMasterResult" type="tns:OrderBankOnlinePayRespone" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DepositIbanking">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subcriberId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="transNote" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="feeAmount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="bankId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="chanelId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="portalId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DepositIbankingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DepositIbankingResult" type="tns:TransactionIBankingResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TransactionIBankingResponseInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="errorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="transationId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="fee" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="urlRedirect" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="transactionId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="moreData" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DepositVisaMaster">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subcriberId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="transNote" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="feeAmount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="chanelId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="portalId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DepositVisaMasterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DepositVisaMasterResult" type="tns:TransactionIBankingResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TopupByIBanking">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subcriberId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="transNote" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="bankId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="topupFunction" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="topupMobileNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="topupEmail" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="topupServiceType" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="topupProvider" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="topupCardAmount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="topupCardQuantity" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="chanelId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TopupByIBankingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TopupByIBankingResult" type="tns:TransactionIBankingResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TopupByVisaMaster">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subcriberId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="transNote" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="topupFunction" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="topupMobileNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="topupEmail" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="topupServiceType" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="topupProvider" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="topupCardAmount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="topupCardQuantity" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="chanelId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TopupByVisaMasterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TopupByVisaMasterResult" type="tns:TransactionIBankingResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TopupByEwallet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subcriberId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="transNote" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="topupFunction" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="topupMobileNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="topupEmail" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="topupServiceType" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="topupProvider" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="topupCardAmount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="topupCardQuantity" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="chanelId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TopupByEwalletResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TopupByEwalletResult" type="tns:TopupResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TopupResponseInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="errorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="transationId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="listCards" type="tns:ArrayOfSoftpinCardInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfSoftpinCardInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SoftpinCardInfo" nillable="true" type="tns:SoftpinCardInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SoftpinCardInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="provider" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="serial" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="pin" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="expire" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ProcessTopupTransaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="transactionId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessTopupTransactionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcessTopupTransactionResult" type="tns:TopupResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TranferDeal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="srcSubcriberId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="desSubcriberId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="voucherPartnerId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="fee" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="transNote" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="quantity" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="chanelId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="portalId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TranferDealResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TranferDealResult" type="tns:TranferDealResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TranferDealResponseInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="errorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="transactionId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="fee" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="balancearr" type="tns:ArrayOfBalanceAreaInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TranferDealV2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="srcSubcriberId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="desSubcriberId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="voucherPartnerId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="orderId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="fee" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="transNote" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="quantity" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="chanelId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="portalId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TranferDealV2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TranferDealV2Result" type="tns:TranferDealResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="resendActivationCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SubcriberId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="resendActivationCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="resendActivationCodeResult" type="tns:DefaultResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="resendEmailVerifcation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SubcriberId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="resendEmailVerifcationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="resendEmailVerifcationResult" type="tns:DefaultResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="verifyEmail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SubcriberId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="verifyEmailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="verifyEmailResult" type="tns:DefaultResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendMT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="smsContent" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendMTResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GenerateOTP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="otpType" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerateOTPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GenerateOTPResult" type="tns:DefaultResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyOTP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="otp" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyOTPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerifyOTPResult" type="tns:DefaultResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyOTPByIsdn">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="otp" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyOTPByIsdnResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerifyOTPByIsdnResult" type="tns:DefaultResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Deposit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subcriberId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bonusid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="amount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="transNote" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DepositResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DepositResult" type="tns:DepositResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DepositResponseInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="errorcode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="rq" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="rps" type="tns:DepositInfoRq" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DepositInfoRq">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="mti" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="lmsPCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="transId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="partnerId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="termTxnDateTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="subscriberId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="txnAmt" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="txnFee" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="bonusId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mac" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="lmsRespCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="hostTxnDateTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="balanceArea" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="bonusTxnArea" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="memo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ProcessOrderAndSendDeal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="orderId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessOrderAndSendDealResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcessOrderAndSendDealResult" type="tns:BaseResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BaseResponseInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="errorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ProcessOrderNoSendDeal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="orderId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessOrderNoSendDealResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcessOrderNoSendDealResult" type="tns:BaseResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessShipperCodOrderAndSendDeal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="orderId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessShipperCodOrderAndSendDealResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcessShipperCodOrderAndSendDealResult" type="tns:BaseResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PostMailMarketing">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="list" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="url" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PostMailMarketingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PostMailMarketingResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReturnDeal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="memberId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="voucherPartnerId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="chanelId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReturnDealResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReturnDealResult" type="tns:ReturnDealResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReturnDealResponseInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="errorcode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="transactionId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="transAmount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="transFee" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpdateVPBankOrderStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="p_OrderId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="vpBankOrderCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="dealId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="orderStatus" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="orderNote" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateVPBankOrderStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateVPBankOrderStatusResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetQRAward">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="memberId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="partnerId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pointId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="requestId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="deviceUid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetQRAwardResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetQRAwardResult" type="tns:QRCheckinAwardResponeInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="QRCheckinAwardResponeInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="errorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="dealId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="partnerId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="partnerName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="dealType" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="dealValue" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="dealName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="expiredDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SendEmailConfirmedBookingPaid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="orderId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendEmailConfirmedBookingPaidResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SendEmailConfirmedBookingNotPaid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="orderId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendEmailConfirmedBookingNotPaidResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="TopupByEwalletVer2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subcriberId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="transNote" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="topupFunction" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="topupEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="topupMobileNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="partnerCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="serviceCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="topupProvider" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="topupCardAmount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="topupCardQuantity" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="chanelId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TopupByEwalletVer2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TopupByEwalletVer2Result" type="tns:TopupVer2ResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TopupVer2ResponseInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="result" type="tns:ArrayOfSoftPinRpInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="errorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="serviceCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="subCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="merchantTransId" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfSoftPinRpInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SoftPinRpInfo" nillable="true" type="tns:SoftPinRpInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SoftPinRpInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="errorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="gWTransId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="msisdn" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="transDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="amount" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="quantity" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="returnPincode" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="billingDetail" type="tns:ArrayOfSoftpinDetailInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfSoftpinDetailInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SoftpinDetailInfo" nillable="true" type="tns:SoftpinDetailInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SoftpinDetailInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="serial" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="pincode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="expire" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TopupByIBankingVer2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subcriberId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="transNote" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="bankId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="topupFunction" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="topupMobileNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="topupEmail" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="topupServiceType" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="topupProvider" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="topupCardAmount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="topupCardQuantity" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="chanelId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="partnerCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="serviceCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TopupByIBankingVer2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TopupByIBankingVer2Result" type="tns:TransactionIBankingResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TopupByIBankingVerV3">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subcriberId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="transNote" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="bankId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="topupFunction" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="topupMobileNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="topupEmail" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="topupServiceType" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="topupProvider" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="topupCardAmount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="topupCardQuantity" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="chanelId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="partnerCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="serviceCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="urlRedirect" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TopupByIBankingVerV3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TopupByIBankingVerV3Result" type="tns:TransactionIBankingResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TopupByVisaMasterVer2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subcriberId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="transNote" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="topupFunction" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="topupMobileNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="topupEmail" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="topupServiceType" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="topupProvider" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="topupCardAmount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="topupCardQuantity" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="chanelId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="partnerCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="serviceCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TopupByVisaMasterVer2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TopupByVisaMasterVer2Result" type="tns:TransactionIBankingResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessTopupTransactionVer2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="transactionId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessTopupTransactionVer2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcessTopupTransactionVer2Result" type="tns:TopupVer2ResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessSoftPinVer2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="transactionId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessSoftPinVer2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcessSoftPinVer2Result" type="tns:TopupVer2ResponseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoyaltyAddPoint">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="memberid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="transnote" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="chanelid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="order_id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoyaltyAddPointResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoyaltyAddPointResult" type="tns:OfflinePaymentMonenyResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearCustomerPoint">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="memberid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="transnote" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="chanelid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearCustomerPointResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClearCustomerPointResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PaymentByLoyaltyPoint">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="memberid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="transnote" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="chanelid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="order_id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PaymentByLoyaltyPointResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PaymentByLoyaltyPointResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="PaymentBookingHotelSoapIn">
+    <wsdl:part name="parameters" element="tns:PaymentBookingHotel" />
+  </wsdl:message>
+  <wsdl:message name="PaymentBookingHotelSoapOut">
+    <wsdl:part name="parameters" element="tns:PaymentBookingHotelResponse" />
+  </wsdl:message>
+  <wsdl:message name="PaymentSoapIn">
+    <wsdl:part name="parameters" element="tns:Payment" />
+  </wsdl:message>
+  <wsdl:message name="PaymentSoapOut">
+    <wsdl:part name="parameters" element="tns:PaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="PaymentNoSMS_EmailSoapIn">
+    <wsdl:part name="parameters" element="tns:PaymentNoSMS_Email" />
+  </wsdl:message>
+  <wsdl:message name="PaymentNoSMS_EmailSoapOut">
+    <wsdl:part name="parameters" element="tns:PaymentNoSMS_EmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="CustomerReversalSoapIn">
+    <wsdl:part name="parameters" element="tns:CustomerReversal" />
+  </wsdl:message>
+  <wsdl:message name="CustomerReversalSoapOut">
+    <wsdl:part name="parameters" element="tns:CustomerReversalResponse" />
+  </wsdl:message>
+  <wsdl:message name="PartnerReversalSoapIn">
+    <wsdl:part name="parameters" element="tns:PartnerReversal" />
+  </wsdl:message>
+  <wsdl:message name="PartnerReversalSoapOut">
+    <wsdl:part name="parameters" element="tns:PartnerReversalResponse" />
+  </wsdl:message>
+  <wsdl:message name="BlockPointSoapIn">
+    <wsdl:part name="parameters" element="tns:BlockPoint" />
+  </wsdl:message>
+  <wsdl:message name="BlockPointSoapOut">
+    <wsdl:part name="parameters" element="tns:BlockPointResponse" />
+  </wsdl:message>
+  <wsdl:message name="MemberRegistrationSoapIn">
+    <wsdl:part name="parameters" element="tns:MemberRegistration" />
+  </wsdl:message>
+  <wsdl:message name="MemberRegistrationSoapOut">
+    <wsdl:part name="parameters" element="tns:MemberRegistrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="OpenIdRegistrationSoapIn">
+    <wsdl:part name="parameters" element="tns:OpenIdRegistration" />
+  </wsdl:message>
+  <wsdl:message name="OpenIdRegistrationSoapOut">
+    <wsdl:part name="parameters" element="tns:OpenIdRegistrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerifyRegistrationSoapIn">
+    <wsdl:part name="parameters" element="tns:VerifyRegistration" />
+  </wsdl:message>
+  <wsdl:message name="VerifyRegistrationSoapOut">
+    <wsdl:part name="parameters" element="tns:VerifyRegistrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="PartnerRegistrationSoapIn">
+    <wsdl:part name="parameters" element="tns:PartnerRegistration" />
+  </wsdl:message>
+  <wsdl:message name="PartnerRegistrationSoapOut">
+    <wsdl:part name="parameters" element="tns:PartnerRegistrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChangePwdSoapIn">
+    <wsdl:part name="parameters" element="tns:ChangePwd" />
+  </wsdl:message>
+  <wsdl:message name="ChangePwdSoapOut">
+    <wsdl:part name="parameters" element="tns:ChangePwdResponse" />
+  </wsdl:message>
+  <wsdl:message name="InqueryBalanceSoapIn">
+    <wsdl:part name="parameters" element="tns:InqueryBalance" />
+  </wsdl:message>
+  <wsdl:message name="InqueryBalanceSoapOut">
+    <wsdl:part name="parameters" element="tns:InqueryBalanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="OfflinePaymentProcessSoapIn">
+    <wsdl:part name="parameters" element="tns:OfflinePaymentProcess" />
+  </wsdl:message>
+  <wsdl:message name="OfflinePaymentProcessSoapOut">
+    <wsdl:part name="parameters" element="tns:OfflinePaymentProcessResponse" />
+  </wsdl:message>
+  <wsdl:message name="OfflinePromotionByPaymentMoneySoapIn">
+    <wsdl:part name="parameters" element="tns:OfflinePromotionByPaymentMoney" />
+  </wsdl:message>
+  <wsdl:message name="OfflinePromotionByPaymentMoneySoapOut">
+    <wsdl:part name="parameters" element="tns:OfflinePromotionByPaymentMoneyResponse" />
+  </wsdl:message>
+  <wsdl:message name="TransactionFeeSoapIn">
+    <wsdl:part name="parameters" element="tns:TransactionFee" />
+  </wsdl:message>
+  <wsdl:message name="TransactionFeeSoapOut">
+    <wsdl:part name="parameters" element="tns:TransactionFeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="TranferSoapIn">
+    <wsdl:part name="parameters" element="tns:Tranfer" />
+  </wsdl:message>
+  <wsdl:message name="TranferSoapOut">
+    <wsdl:part name="parameters" element="tns:TranferResponse" />
+  </wsdl:message>
+  <wsdl:message name="CardDepositSoapIn">
+    <wsdl:part name="parameters" element="tns:CardDeposit" />
+  </wsdl:message>
+  <wsdl:message name="CardDepositSoapOut">
+    <wsdl:part name="parameters" element="tns:CardDepositResponse" />
+  </wsdl:message>
+  <wsdl:message name="PayOrderSoapIn">
+    <wsdl:part name="parameters" element="tns:PayOrder" />
+  </wsdl:message>
+  <wsdl:message name="PayOrderSoapOut">
+    <wsdl:part name="parameters" element="tns:PayOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDealPriceSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDealPrice" />
+  </wsdl:message>
+  <wsdl:message name="GetDealPriceSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDealPriceResponse" />
+  </wsdl:message>
+  <wsdl:message name="PayOnlineBankingSoapIn">
+    <wsdl:part name="parameters" element="tns:PayOnlineBanking" />
+  </wsdl:message>
+  <wsdl:message name="PayOnlineBankingSoapOut">
+    <wsdl:part name="parameters" element="tns:PayOnlineBankingResponse" />
+  </wsdl:message>
+  <wsdl:message name="PayOnlineBankingV3SoapIn">
+    <wsdl:part name="parameters" element="tns:PayOnlineBankingV3" />
+  </wsdl:message>
+  <wsdl:message name="PayOnlineBankingV3SoapOut">
+    <wsdl:part name="parameters" element="tns:PayOnlineBankingV3Response" />
+  </wsdl:message>
+  <wsdl:message name="RemoveNAPASTokenSoapIn">
+    <wsdl:part name="parameters" element="tns:RemoveNAPASToken" />
+  </wsdl:message>
+  <wsdl:message name="RemoveNAPASTokenSoapOut">
+    <wsdl:part name="parameters" element="tns:RemoveNAPASTokenResponse" />
+  </wsdl:message>
+  <wsdl:message name="PayOnlineBankingV2SoapIn">
+    <wsdl:part name="parameters" element="tns:PayOnlineBankingV2" />
+  </wsdl:message>
+  <wsdl:message name="PayOnlineBankingV2SoapOut">
+    <wsdl:part name="parameters" element="tns:PayOnlineBankingV2Response" />
+  </wsdl:message>
+  <wsdl:message name="PayOnlineVisaMasterSoapIn">
+    <wsdl:part name="parameters" element="tns:PayOnlineVisaMaster" />
+  </wsdl:message>
+  <wsdl:message name="PayOnlineVisaMasterSoapOut">
+    <wsdl:part name="parameters" element="tns:PayOnlineVisaMasterResponse" />
+  </wsdl:message>
+  <wsdl:message name="DepositIbankingSoapIn">
+    <wsdl:part name="parameters" element="tns:DepositIbanking" />
+  </wsdl:message>
+  <wsdl:message name="DepositIbankingSoapOut">
+    <wsdl:part name="parameters" element="tns:DepositIbankingResponse" />
+  </wsdl:message>
+  <wsdl:message name="DepositVisaMasterSoapIn">
+    <wsdl:part name="parameters" element="tns:DepositVisaMaster" />
+  </wsdl:message>
+  <wsdl:message name="DepositVisaMasterSoapOut">
+    <wsdl:part name="parameters" element="tns:DepositVisaMasterResponse" />
+  </wsdl:message>
+  <wsdl:message name="TopupByIBankingSoapIn">
+    <wsdl:part name="parameters" element="tns:TopupByIBanking" />
+  </wsdl:message>
+  <wsdl:message name="TopupByIBankingSoapOut">
+    <wsdl:part name="parameters" element="tns:TopupByIBankingResponse" />
+  </wsdl:message>
+  <wsdl:message name="TopupByVisaMasterSoapIn">
+    <wsdl:part name="parameters" element="tns:TopupByVisaMaster" />
+  </wsdl:message>
+  <wsdl:message name="TopupByVisaMasterSoapOut">
+    <wsdl:part name="parameters" element="tns:TopupByVisaMasterResponse" />
+  </wsdl:message>
+  <wsdl:message name="TopupByEwalletSoapIn">
+    <wsdl:part name="parameters" element="tns:TopupByEwallet" />
+  </wsdl:message>
+  <wsdl:message name="TopupByEwalletSoapOut">
+    <wsdl:part name="parameters" element="tns:TopupByEwalletResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcessTopupTransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcessTopupTransaction" />
+  </wsdl:message>
+  <wsdl:message name="ProcessTopupTransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcessTopupTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="TranferDealSoapIn">
+    <wsdl:part name="parameters" element="tns:TranferDeal" />
+  </wsdl:message>
+  <wsdl:message name="TranferDealSoapOut">
+    <wsdl:part name="parameters" element="tns:TranferDealResponse" />
+  </wsdl:message>
+  <wsdl:message name="TranferDealV2SoapIn">
+    <wsdl:part name="parameters" element="tns:TranferDealV2" />
+  </wsdl:message>
+  <wsdl:message name="TranferDealV2SoapOut">
+    <wsdl:part name="parameters" element="tns:TranferDealV2Response" />
+  </wsdl:message>
+  <wsdl:message name="resendActivationCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:resendActivationCode" />
+  </wsdl:message>
+  <wsdl:message name="resendActivationCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:resendActivationCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="resendEmailVerifcationSoapIn">
+    <wsdl:part name="parameters" element="tns:resendEmailVerifcation" />
+  </wsdl:message>
+  <wsdl:message name="resendEmailVerifcationSoapOut">
+    <wsdl:part name="parameters" element="tns:resendEmailVerifcationResponse" />
+  </wsdl:message>
+  <wsdl:message name="verifyEmailSoapIn">
+    <wsdl:part name="parameters" element="tns:verifyEmail" />
+  </wsdl:message>
+  <wsdl:message name="verifyEmailSoapOut">
+    <wsdl:part name="parameters" element="tns:verifyEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendMTSoapIn">
+    <wsdl:part name="parameters" element="tns:SendMT" />
+  </wsdl:message>
+  <wsdl:message name="SendMTSoapOut">
+    <wsdl:part name="parameters" element="tns:SendMTResponse" />
+  </wsdl:message>
+  <wsdl:message name="GenerateOTPSoapIn">
+    <wsdl:part name="parameters" element="tns:GenerateOTP" />
+  </wsdl:message>
+  <wsdl:message name="GenerateOTPSoapOut">
+    <wsdl:part name="parameters" element="tns:GenerateOTPResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerifyOTPSoapIn">
+    <wsdl:part name="parameters" element="tns:VerifyOTP" />
+  </wsdl:message>
+  <wsdl:message name="VerifyOTPSoapOut">
+    <wsdl:part name="parameters" element="tns:VerifyOTPResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerifyOTPByIsdnSoapIn">
+    <wsdl:part name="parameters" element="tns:VerifyOTPByIsdn" />
+  </wsdl:message>
+  <wsdl:message name="VerifyOTPByIsdnSoapOut">
+    <wsdl:part name="parameters" element="tns:VerifyOTPByIsdnResponse" />
+  </wsdl:message>
+  <wsdl:message name="DepositSoapIn">
+    <wsdl:part name="parameters" element="tns:Deposit" />
+  </wsdl:message>
+  <wsdl:message name="DepositSoapOut">
+    <wsdl:part name="parameters" element="tns:DepositResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcessOrderAndSendDealSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcessOrderAndSendDeal" />
+  </wsdl:message>
+  <wsdl:message name="ProcessOrderAndSendDealSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcessOrderAndSendDealResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcessOrderNoSendDealSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcessOrderNoSendDeal" />
+  </wsdl:message>
+  <wsdl:message name="ProcessOrderNoSendDealSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcessOrderNoSendDealResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcessShipperCodOrderAndSendDealSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcessShipperCodOrderAndSendDeal" />
+  </wsdl:message>
+  <wsdl:message name="ProcessShipperCodOrderAndSendDealSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcessShipperCodOrderAndSendDealResponse" />
+  </wsdl:message>
+  <wsdl:message name="PostMailMarketingSoapIn">
+    <wsdl:part name="parameters" element="tns:PostMailMarketing" />
+  </wsdl:message>
+  <wsdl:message name="PostMailMarketingSoapOut">
+    <wsdl:part name="parameters" element="tns:PostMailMarketingResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReturnDealSoapIn">
+    <wsdl:part name="parameters" element="tns:ReturnDeal" />
+  </wsdl:message>
+  <wsdl:message name="ReturnDealSoapOut">
+    <wsdl:part name="parameters" element="tns:ReturnDealResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateVPBankOrderStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateVPBankOrderStatus" />
+  </wsdl:message>
+  <wsdl:message name="UpdateVPBankOrderStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateVPBankOrderStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetQRAwardSoapIn">
+    <wsdl:part name="parameters" element="tns:GetQRAward" />
+  </wsdl:message>
+  <wsdl:message name="GetQRAwardSoapOut">
+    <wsdl:part name="parameters" element="tns:GetQRAwardResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailConfirmedBookingPaidSoapIn">
+    <wsdl:part name="parameters" element="tns:SendEmailConfirmedBookingPaid" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailConfirmedBookingPaidSoapOut">
+    <wsdl:part name="parameters" element="tns:SendEmailConfirmedBookingPaidResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailConfirmedBookingNotPaidSoapIn">
+    <wsdl:part name="parameters" element="tns:SendEmailConfirmedBookingNotPaid" />
+  </wsdl:message>
+  <wsdl:message name="SendEmailConfirmedBookingNotPaidSoapOut">
+    <wsdl:part name="parameters" element="tns:SendEmailConfirmedBookingNotPaidResponse" />
+  </wsdl:message>
+  <wsdl:message name="TopupByEwalletVer2SoapIn">
+    <wsdl:part name="parameters" element="tns:TopupByEwalletVer2" />
+  </wsdl:message>
+  <wsdl:message name="TopupByEwalletVer2SoapOut">
+    <wsdl:part name="parameters" element="tns:TopupByEwalletVer2Response" />
+  </wsdl:message>
+  <wsdl:message name="TopupByIBankingVer2SoapIn">
+    <wsdl:part name="parameters" element="tns:TopupByIBankingVer2" />
+  </wsdl:message>
+  <wsdl:message name="TopupByIBankingVer2SoapOut">
+    <wsdl:part name="parameters" element="tns:TopupByIBankingVer2Response" />
+  </wsdl:message>
+  <wsdl:message name="TopupByIBankingVerV3SoapIn">
+    <wsdl:part name="parameters" element="tns:TopupByIBankingVerV3" />
+  </wsdl:message>
+  <wsdl:message name="TopupByIBankingVerV3SoapOut">
+    <wsdl:part name="parameters" element="tns:TopupByIBankingVerV3Response" />
+  </wsdl:message>
+  <wsdl:message name="TopupByVisaMasterVer2SoapIn">
+    <wsdl:part name="parameters" element="tns:TopupByVisaMasterVer2" />
+  </wsdl:message>
+  <wsdl:message name="TopupByVisaMasterVer2SoapOut">
+    <wsdl:part name="parameters" element="tns:TopupByVisaMasterVer2Response" />
+  </wsdl:message>
+  <wsdl:message name="ProcessTopupTransactionVer2SoapIn">
+    <wsdl:part name="parameters" element="tns:ProcessTopupTransactionVer2" />
+  </wsdl:message>
+  <wsdl:message name="ProcessTopupTransactionVer2SoapOut">
+    <wsdl:part name="parameters" element="tns:ProcessTopupTransactionVer2Response" />
+  </wsdl:message>
+  <wsdl:message name="ProcessSoftPinVer2SoapIn">
+    <wsdl:part name="parameters" element="tns:ProcessSoftPinVer2" />
+  </wsdl:message>
+  <wsdl:message name="ProcessSoftPinVer2SoapOut">
+    <wsdl:part name="parameters" element="tns:ProcessSoftPinVer2Response" />
+  </wsdl:message>
+  <wsdl:message name="LoyaltyAddPointSoapIn">
+    <wsdl:part name="parameters" element="tns:LoyaltyAddPoint" />
+  </wsdl:message>
+  <wsdl:message name="LoyaltyAddPointSoapOut">
+    <wsdl:part name="parameters" element="tns:LoyaltyAddPointResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClearCustomerPointSoapIn">
+    <wsdl:part name="parameters" element="tns:ClearCustomerPoint" />
+  </wsdl:message>
+  <wsdl:message name="ClearCustomerPointSoapOut">
+    <wsdl:part name="parameters" element="tns:ClearCustomerPointResponse" />
+  </wsdl:message>
+  <wsdl:message name="PaymentByLoyaltyPointSoapIn">
+    <wsdl:part name="parameters" element="tns:PaymentByLoyaltyPoint" />
+  </wsdl:message>
+  <wsdl:message name="PaymentByLoyaltyPointSoapOut">
+    <wsdl:part name="parameters" element="tns:PaymentByLoyaltyPointResponse" />
+  </wsdl:message>
+  <wsdl:portType name="MarketPlusSoap">
+    <wsdl:operation name="PaymentBookingHotel">
+      <wsdl:input message="tns:PaymentBookingHotelSoapIn" />
+      <wsdl:output message="tns:PaymentBookingHotelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Payment">
+      <wsdl:input message="tns:PaymentSoapIn" />
+      <wsdl:output message="tns:PaymentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PaymentNoSMS_Email">
+      <wsdl:input message="tns:PaymentNoSMS_EmailSoapIn" />
+      <wsdl:output message="tns:PaymentNoSMS_EmailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerReversal">
+      <wsdl:input message="tns:CustomerReversalSoapIn" />
+      <wsdl:output message="tns:CustomerReversalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PartnerReversal">
+      <wsdl:input message="tns:PartnerReversalSoapIn" />
+      <wsdl:output message="tns:PartnerReversalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BlockPoint">
+      <wsdl:input message="tns:BlockPointSoapIn" />
+      <wsdl:output message="tns:BlockPointSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MemberRegistration">
+      <wsdl:input message="tns:MemberRegistrationSoapIn" />
+      <wsdl:output message="tns:MemberRegistrationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OpenIdRegistration">
+      <wsdl:input message="tns:OpenIdRegistrationSoapIn" />
+      <wsdl:output message="tns:OpenIdRegistrationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyRegistration">
+      <wsdl:input message="tns:VerifyRegistrationSoapIn" />
+      <wsdl:output message="tns:VerifyRegistrationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PartnerRegistration">
+      <wsdl:input message="tns:PartnerRegistrationSoapIn" />
+      <wsdl:output message="tns:PartnerRegistrationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangePwd">
+      <wsdl:input message="tns:ChangePwdSoapIn" />
+      <wsdl:output message="tns:ChangePwdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InqueryBalance">
+      <wsdl:input message="tns:InqueryBalanceSoapIn" />
+      <wsdl:output message="tns:InqueryBalanceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OfflinePaymentProcess">
+      <wsdl:input message="tns:OfflinePaymentProcessSoapIn" />
+      <wsdl:output message="tns:OfflinePaymentProcessSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OfflinePromotionByPaymentMoney">
+      <wsdl:input message="tns:OfflinePromotionByPaymentMoneySoapIn" />
+      <wsdl:output message="tns:OfflinePromotionByPaymentMoneySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TransactionFee">
+      <wsdl:input message="tns:TransactionFeeSoapIn" />
+      <wsdl:output message="tns:TransactionFeeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Tranfer">
+      <wsdl:input message="tns:TranferSoapIn" />
+      <wsdl:output message="tns:TranferSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CardDeposit">
+      <wsdl:input message="tns:CardDepositSoapIn" />
+      <wsdl:output message="tns:CardDepositSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PayOrder">
+      <wsdl:input message="tns:PayOrderSoapIn" />
+      <wsdl:output message="tns:PayOrderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDealPrice">
+      <wsdl:input message="tns:GetDealPriceSoapIn" />
+      <wsdl:output message="tns:GetDealPriceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PayOnlineBanking">
+      <wsdl:input message="tns:PayOnlineBankingSoapIn" />
+      <wsdl:output message="tns:PayOnlineBankingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PayOnlineBankingV3">
+      <wsdl:input message="tns:PayOnlineBankingV3SoapIn" />
+      <wsdl:output message="tns:PayOnlineBankingV3SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveNAPASToken">
+      <wsdl:input message="tns:RemoveNAPASTokenSoapIn" />
+      <wsdl:output message="tns:RemoveNAPASTokenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PayOnlineBankingV2">
+      <wsdl:input message="tns:PayOnlineBankingV2SoapIn" />
+      <wsdl:output message="tns:PayOnlineBankingV2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PayOnlineVisaMaster">
+      <wsdl:input message="tns:PayOnlineVisaMasterSoapIn" />
+      <wsdl:output message="tns:PayOnlineVisaMasterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DepositIbanking">
+      <wsdl:input message="tns:DepositIbankingSoapIn" />
+      <wsdl:output message="tns:DepositIbankingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DepositVisaMaster">
+      <wsdl:input message="tns:DepositVisaMasterSoapIn" />
+      <wsdl:output message="tns:DepositVisaMasterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TopupByIBanking">
+      <wsdl:input message="tns:TopupByIBankingSoapIn" />
+      <wsdl:output message="tns:TopupByIBankingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TopupByVisaMaster">
+      <wsdl:input message="tns:TopupByVisaMasterSoapIn" />
+      <wsdl:output message="tns:TopupByVisaMasterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TopupByEwallet">
+      <wsdl:input message="tns:TopupByEwalletSoapIn" />
+      <wsdl:output message="tns:TopupByEwalletSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessTopupTransaction">
+      <wsdl:input message="tns:ProcessTopupTransactionSoapIn" />
+      <wsdl:output message="tns:ProcessTopupTransactionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TranferDeal">
+      <wsdl:input message="tns:TranferDealSoapIn" />
+      <wsdl:output message="tns:TranferDealSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TranferDealV2">
+      <wsdl:input message="tns:TranferDealV2SoapIn" />
+      <wsdl:output message="tns:TranferDealV2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="resendActivationCode">
+      <wsdl:input message="tns:resendActivationCodeSoapIn" />
+      <wsdl:output message="tns:resendActivationCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="resendEmailVerifcation">
+      <wsdl:input message="tns:resendEmailVerifcationSoapIn" />
+      <wsdl:output message="tns:resendEmailVerifcationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="verifyEmail">
+      <wsdl:input message="tns:verifyEmailSoapIn" />
+      <wsdl:output message="tns:verifyEmailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMT">
+      <wsdl:input message="tns:SendMTSoapIn" />
+      <wsdl:output message="tns:SendMTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerateOTP">
+      <wsdl:input message="tns:GenerateOTPSoapIn" />
+      <wsdl:output message="tns:GenerateOTPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyOTP">
+      <wsdl:input message="tns:VerifyOTPSoapIn" />
+      <wsdl:output message="tns:VerifyOTPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyOTPByIsdn">
+      <wsdl:input message="tns:VerifyOTPByIsdnSoapIn" />
+      <wsdl:output message="tns:VerifyOTPByIsdnSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Deposit">
+      <wsdl:input message="tns:DepositSoapIn" />
+      <wsdl:output message="tns:DepositSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessOrderAndSendDeal">
+      <wsdl:input message="tns:ProcessOrderAndSendDealSoapIn" />
+      <wsdl:output message="tns:ProcessOrderAndSendDealSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessOrderNoSendDeal">
+      <wsdl:input message="tns:ProcessOrderNoSendDealSoapIn" />
+      <wsdl:output message="tns:ProcessOrderNoSendDealSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessShipperCodOrderAndSendDeal">
+      <wsdl:input message="tns:ProcessShipperCodOrderAndSendDealSoapIn" />
+      <wsdl:output message="tns:ProcessShipperCodOrderAndSendDealSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PostMailMarketing">
+      <wsdl:input message="tns:PostMailMarketingSoapIn" />
+      <wsdl:output message="tns:PostMailMarketingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReturnDeal">
+      <wsdl:input message="tns:ReturnDealSoapIn" />
+      <wsdl:output message="tns:ReturnDealSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVPBankOrderStatus">
+      <wsdl:input message="tns:UpdateVPBankOrderStatusSoapIn" />
+      <wsdl:output message="tns:UpdateVPBankOrderStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQRAward">
+      <wsdl:input message="tns:GetQRAwardSoapIn" />
+      <wsdl:output message="tns:GetQRAwardSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailConfirmedBookingPaid">
+      <wsdl:input message="tns:SendEmailConfirmedBookingPaidSoapIn" />
+      <wsdl:output message="tns:SendEmailConfirmedBookingPaidSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailConfirmedBookingNotPaid">
+      <wsdl:input message="tns:SendEmailConfirmedBookingNotPaidSoapIn" />
+      <wsdl:output message="tns:SendEmailConfirmedBookingNotPaidSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TopupByEwalletVer2">
+      <wsdl:input message="tns:TopupByEwalletVer2SoapIn" />
+      <wsdl:output message="tns:TopupByEwalletVer2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TopupByIBankingVer2">
+      <wsdl:input message="tns:TopupByIBankingVer2SoapIn" />
+      <wsdl:output message="tns:TopupByIBankingVer2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TopupByIBankingVerV3">
+      <wsdl:input message="tns:TopupByIBankingVerV3SoapIn" />
+      <wsdl:output message="tns:TopupByIBankingVerV3SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TopupByVisaMasterVer2">
+      <wsdl:input message="tns:TopupByVisaMasterVer2SoapIn" />
+      <wsdl:output message="tns:TopupByVisaMasterVer2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessTopupTransactionVer2">
+      <wsdl:input message="tns:ProcessTopupTransactionVer2SoapIn" />
+      <wsdl:output message="tns:ProcessTopupTransactionVer2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessSoftPinVer2">
+      <wsdl:input message="tns:ProcessSoftPinVer2SoapIn" />
+      <wsdl:output message="tns:ProcessSoftPinVer2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoyaltyAddPoint">
+      <wsdl:input message="tns:LoyaltyAddPointSoapIn" />
+      <wsdl:output message="tns:LoyaltyAddPointSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearCustomerPoint">
+      <wsdl:input message="tns:ClearCustomerPointSoapIn" />
+      <wsdl:output message="tns:ClearCustomerPointSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PaymentByLoyaltyPoint">
+      <wsdl:input message="tns:PaymentByLoyaltyPointSoapIn" />
+      <wsdl:output message="tns:PaymentByLoyaltyPointSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MarketPlusSoap" type="tns:MarketPlusSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PaymentBookingHotel">
+      <soap:operation soapAction="http://tempuri.org/PaymentBookingHotel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Payment">
+      <soap:operation soapAction="http://tempuri.org/Payment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PaymentNoSMS_Email">
+      <soap:operation soapAction="http://tempuri.org/PaymentNoSMS_Email" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerReversal">
+      <soap:operation soapAction="http://tempuri.org/CustomerReversal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PartnerReversal">
+      <soap:operation soapAction="http://tempuri.org/PartnerReversal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BlockPoint">
+      <soap:operation soapAction="http://tempuri.org/BlockPoint" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MemberRegistration">
+      <soap:operation soapAction="http://tempuri.org/MemberRegistration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpenIdRegistration">
+      <soap:operation soapAction="http://tempuri.org/OpenIdRegistration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyRegistration">
+      <soap:operation soapAction="http://tempuri.org/VerifyRegistration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PartnerRegistration">
+      <soap:operation soapAction="http://tempuri.org/PartnerRegistration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangePwd">
+      <soap:operation soapAction="http://tempuri.org/ChangePwd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InqueryBalance">
+      <soap:operation soapAction="http://tempuri.org/InqueryBalance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OfflinePaymentProcess">
+      <soap:operation soapAction="http://tempuri.org/OfflinePaymentProcess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OfflinePromotionByPaymentMoney">
+      <soap:operation soapAction="http://tempuri.org/OfflinePromotionByPaymentMoney" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransactionFee">
+      <soap:operation soapAction="http://tempuri.org/TransactionFee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Tranfer">
+      <soap:operation soapAction="http://tempuri.org/Tranfer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CardDeposit">
+      <soap:operation soapAction="http://tempuri.org/CardDeposit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PayOrder">
+      <soap:operation soapAction="http://tempuri.org/PayOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDealPrice">
+      <soap:operation soapAction="http://tempuri.org/GetDealPrice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PayOnlineBanking">
+      <soap:operation soapAction="http://tempuri.org/PayOnlineBanking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PayOnlineBankingV3">
+      <soap:operation soapAction="http://tempuri.org/PayOnlineBankingV3" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveNAPASToken">
+      <soap:operation soapAction="http://tempuri.org/RemoveNAPASToken" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PayOnlineBankingV2">
+      <soap:operation soapAction="http://tempuri.org/PayOnlineBankingV2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PayOnlineVisaMaster">
+      <soap:operation soapAction="http://tempuri.org/PayOnlineVisaMaster" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DepositIbanking">
+      <soap:operation soapAction="http://tempuri.org/DepositIbanking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DepositVisaMaster">
+      <soap:operation soapAction="http://tempuri.org/DepositVisaMaster" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TopupByIBanking">
+      <soap:operation soapAction="http://tempuri.org/TopupByIBanking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TopupByVisaMaster">
+      <soap:operation soapAction="http://tempuri.org/TopupByVisaMaster" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TopupByEwallet">
+      <soap:operation soapAction="http://tempuri.org/TopupByEwallet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessTopupTransaction">
+      <soap:operation soapAction="http://tempuri.org/ProcessTopupTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TranferDeal">
+      <soap:operation soapAction="http://tempuri.org/TranferDeal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TranferDealV2">
+      <soap:operation soapAction="http://tempuri.org/TranferDealV2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="resendActivationCode">
+      <soap:operation soapAction="http://tempuri.org/resendActivationCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="resendEmailVerifcation">
+      <soap:operation soapAction="http://tempuri.org/resendEmailVerifcation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verifyEmail">
+      <soap:operation soapAction="http://tempuri.org/verifyEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMT">
+      <soap:operation soapAction="http://tempuri.org/SendMT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateOTP">
+      <soap:operation soapAction="http://tempuri.org/GenerateOTP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyOTP">
+      <soap:operation soapAction="http://tempuri.org/VerifyOTP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyOTPByIsdn">
+      <soap:operation soapAction="http://tempuri.org/VerifyOTPByIsdn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Deposit">
+      <soap:operation soapAction="http://tempuri.org/Deposit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessOrderAndSendDeal">
+      <soap:operation soapAction="http://tempuri.org/ProcessOrderAndSendDeal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessOrderNoSendDeal">
+      <soap:operation soapAction="http://tempuri.org/ProcessOrderNoSendDeal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessShipperCodOrderAndSendDeal">
+      <soap:operation soapAction="http://tempuri.org/ProcessShipperCodOrderAndSendDeal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostMailMarketing">
+      <soap:operation soapAction="http://tempuri.org/PostMailMarketing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnDeal">
+      <soap:operation soapAction="http://tempuri.org/ReturnDeal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVPBankOrderStatus">
+      <soap:operation soapAction="http://tempuri.org/UpdateVPBankOrderStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQRAward">
+      <soap:operation soapAction="http://tempuri.org/GetQRAward" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailConfirmedBookingPaid">
+      <soap:operation soapAction="http://tempuri.org/SendEmailConfirmedBookingPaid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailConfirmedBookingNotPaid">
+      <soap:operation soapAction="http://tempuri.org/SendEmailConfirmedBookingNotPaid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TopupByEwalletVer2">
+      <soap:operation soapAction="http://tempuri.org/TopupByEwalletVer2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TopupByIBankingVer2">
+      <soap:operation soapAction="http://tempuri.org/TopupByIBankingVer2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TopupByIBankingVerV3">
+      <soap:operation soapAction="http://tempuri.org/TopupByIBankingVerV3" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TopupByVisaMasterVer2">
+      <soap:operation soapAction="http://tempuri.org/TopupByVisaMasterVer2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessTopupTransactionVer2">
+      <soap:operation soapAction="http://tempuri.org/ProcessTopupTransactionVer2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessSoftPinVer2">
+      <soap:operation soapAction="http://tempuri.org/ProcessSoftPinVer2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoyaltyAddPoint">
+      <soap:operation soapAction="http://tempuri.org/LoyaltyAddPoint" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearCustomerPoint">
+      <soap:operation soapAction="http://tempuri.org/ClearCustomerPoint" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PaymentByLoyaltyPoint">
+      <soap:operation soapAction="http://tempuri.org/PaymentByLoyaltyPoint" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MarketPlusSoap12" type="tns:MarketPlusSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PaymentBookingHotel">
+      <soap12:operation soapAction="http://tempuri.org/PaymentBookingHotel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Payment">
+      <soap12:operation soapAction="http://tempuri.org/Payment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PaymentNoSMS_Email">
+      <soap12:operation soapAction="http://tempuri.org/PaymentNoSMS_Email" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerReversal">
+      <soap12:operation soapAction="http://tempuri.org/CustomerReversal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PartnerReversal">
+      <soap12:operation soapAction="http://tempuri.org/PartnerReversal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BlockPoint">
+      <soap12:operation soapAction="http://tempuri.org/BlockPoint" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MemberRegistration">
+      <soap12:operation soapAction="http://tempuri.org/MemberRegistration" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OpenIdRegistration">
+      <soap12:operation soapAction="http://tempuri.org/OpenIdRegistration" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyRegistration">
+      <soap12:operation soapAction="http://tempuri.org/VerifyRegistration" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PartnerRegistration">
+      <soap12:operation soapAction="http://tempuri.org/PartnerRegistration" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangePwd">
+      <soap12:operation soapAction="http://tempuri.org/ChangePwd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InqueryBalance">
+      <soap12:operation soapAction="http://tempuri.org/InqueryBalance" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OfflinePaymentProcess">
+      <soap12:operation soapAction="http://tempuri.org/OfflinePaymentProcess" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OfflinePromotionByPaymentMoney">
+      <soap12:operation soapAction="http://tempuri.org/OfflinePromotionByPaymentMoney" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TransactionFee">
+      <soap12:operation soapAction="http://tempuri.org/TransactionFee" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Tranfer">
+      <soap12:operation soapAction="http://tempuri.org/Tranfer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CardDeposit">
+      <soap12:operation soapAction="http://tempuri.org/CardDeposit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PayOrder">
+      <soap12:operation soapAction="http://tempuri.org/PayOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDealPrice">
+      <soap12:operation soapAction="http://tempuri.org/GetDealPrice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PayOnlineBanking">
+      <soap12:operation soapAction="http://tempuri.org/PayOnlineBanking" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PayOnlineBankingV3">
+      <soap12:operation soapAction="http://tempuri.org/PayOnlineBankingV3" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveNAPASToken">
+      <soap12:operation soapAction="http://tempuri.org/RemoveNAPASToken" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PayOnlineBankingV2">
+      <soap12:operation soapAction="http://tempuri.org/PayOnlineBankingV2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PayOnlineVisaMaster">
+      <soap12:operation soapAction="http://tempuri.org/PayOnlineVisaMaster" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DepositIbanking">
+      <soap12:operation soapAction="http://tempuri.org/DepositIbanking" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DepositVisaMaster">
+      <soap12:operation soapAction="http://tempuri.org/DepositVisaMaster" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TopupByIBanking">
+      <soap12:operation soapAction="http://tempuri.org/TopupByIBanking" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TopupByVisaMaster">
+      <soap12:operation soapAction="http://tempuri.org/TopupByVisaMaster" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TopupByEwallet">
+      <soap12:operation soapAction="http://tempuri.org/TopupByEwallet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessTopupTransaction">
+      <soap12:operation soapAction="http://tempuri.org/ProcessTopupTransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TranferDeal">
+      <soap12:operation soapAction="http://tempuri.org/TranferDeal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TranferDealV2">
+      <soap12:operation soapAction="http://tempuri.org/TranferDealV2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="resendActivationCode">
+      <soap12:operation soapAction="http://tempuri.org/resendActivationCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="resendEmailVerifcation">
+      <soap12:operation soapAction="http://tempuri.org/resendEmailVerifcation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verifyEmail">
+      <soap12:operation soapAction="http://tempuri.org/verifyEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMT">
+      <soap12:operation soapAction="http://tempuri.org/SendMT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateOTP">
+      <soap12:operation soapAction="http://tempuri.org/GenerateOTP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyOTP">
+      <soap12:operation soapAction="http://tempuri.org/VerifyOTP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyOTPByIsdn">
+      <soap12:operation soapAction="http://tempuri.org/VerifyOTPByIsdn" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Deposit">
+      <soap12:operation soapAction="http://tempuri.org/Deposit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessOrderAndSendDeal">
+      <soap12:operation soapAction="http://tempuri.org/ProcessOrderAndSendDeal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessOrderNoSendDeal">
+      <soap12:operation soapAction="http://tempuri.org/ProcessOrderNoSendDeal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessShipperCodOrderAndSendDeal">
+      <soap12:operation soapAction="http://tempuri.org/ProcessShipperCodOrderAndSendDeal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostMailMarketing">
+      <soap12:operation soapAction="http://tempuri.org/PostMailMarketing" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnDeal">
+      <soap12:operation soapAction="http://tempuri.org/ReturnDeal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVPBankOrderStatus">
+      <soap12:operation soapAction="http://tempuri.org/UpdateVPBankOrderStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQRAward">
+      <soap12:operation soapAction="http://tempuri.org/GetQRAward" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailConfirmedBookingPaid">
+      <soap12:operation soapAction="http://tempuri.org/SendEmailConfirmedBookingPaid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendEmailConfirmedBookingNotPaid">
+      <soap12:operation soapAction="http://tempuri.org/SendEmailConfirmedBookingNotPaid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TopupByEwalletVer2">
+      <soap12:operation soapAction="http://tempuri.org/TopupByEwalletVer2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TopupByIBankingVer2">
+      <soap12:operation soapAction="http://tempuri.org/TopupByIBankingVer2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TopupByIBankingVerV3">
+      <soap12:operation soapAction="http://tempuri.org/TopupByIBankingVerV3" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TopupByVisaMasterVer2">
+      <soap12:operation soapAction="http://tempuri.org/TopupByVisaMasterVer2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessTopupTransactionVer2">
+      <soap12:operation soapAction="http://tempuri.org/ProcessTopupTransactionVer2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessSoftPinVer2">
+      <soap12:operation soapAction="http://tempuri.org/ProcessSoftPinVer2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoyaltyAddPoint">
+      <soap12:operation soapAction="http://tempuri.org/LoyaltyAddPoint" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearCustomerPoint">
+      <soap12:operation soapAction="http://tempuri.org/ClearCustomerPoint" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PaymentByLoyaltyPoint">
+      <soap12:operation soapAction="http://tempuri.org/PaymentByLoyaltyPoint" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MarketPlus">
+    <wsdl:port name="MarketPlusSoap" binding="tns:MarketPlusSoap">
+      <soap:address location="http://localhost:8088/MarketPlus.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MarketPlusSoap12" binding="tns:MarketPlusSoap12">
+      <soap12:address location="http://localhost:8088/MarketPlus.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

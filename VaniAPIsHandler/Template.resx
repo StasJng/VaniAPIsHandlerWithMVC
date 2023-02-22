@@ -1,0 +1,571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Booking_CompleteSMS" xml:space="preserve">
+    <value>Cam on ban da dat phong tai Dealtoday.vn. Ma DH:{0}. Ma dat phong se duoc gui toi ban ngay khi don hang duoc xac nhan. LH: 19002065</value>
+    <comment>gui tin nhan khi khach hang dat phong thanh cong</comment>
+  </data>
+  <data name="D2DSupportBookingSMS" xml:space="preserve">
+    <value>Cam on ban da dat phong tai Dealtoday.vn. Ma DH:{0}, Dealtoday se tien hanh xac nhan va dat phong giup ban. LH: 19002065</value>
+    <comment>gui sms cho khach hang khi khach hang chon hinh thuc Dealtoday booking ho</comment>
+  </data>
+  <data name="Email_CheckoutSuccess" xml:space="preserve">
+    <value>&lt;div style="width: 100%; background: #fff; margin: 0 auto"&gt;
+        &lt;table style="background: #F58220; padding: 5px 0; width: 100%;"&gt;
+            &lt;tr&gt;
+                &lt;td style="text-align: center;"&gt;
+                    &lt;b style="color: #fff;"&gt;&lt;a style="color: #fff;" href="www.dealtoday.vn"&gt;www.dealtoday.vn&lt;/a&gt;&lt;/b&gt;
+                &lt;/td&gt;
+                &lt;td style="text-align: center;"&gt;
+                    &lt;b style="color: #fff;"&gt;Hotline: 1900 2065&lt;/b&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;table style="background: #fff; padding: 10px 0; width: 100%;"&gt;
+            &lt;tr&gt;
+                &lt;td style="text-align: center;"&gt;
+                    &lt;a href="https://www.dealtoday.vn" target="_blank"&gt;
+                        &lt;img class="center fullwidth" width="230" src="https://cdn.dealtoday.vn/dealtodayvnmailimg/Deal+today+logo-02_small.png"
+                            alt="Dealtoday" title="Dealtoday"&gt;
+                    &lt;/a&gt;
+                &lt;/td&gt;
+                &lt;td style="text-align: center;"&gt;
+                    &lt;a href="https://www.dealtoday.vn" style="color: #555555; text-decoration: none;"&gt;&lt;b&gt;
+                        Deal |&lt;/b&gt;&lt;/a&gt; &lt;a href="https://www.dealtoday.vn/ha-noi/pos" style="color: #555555;
+                            text-decoration: none;"&gt;&lt;b&gt;Điểm ưu đãi |&lt;/b&gt;&lt;/a&gt; &lt;a href="https://id.dealtoday.vn"
+                                style="color: #F58220;"&gt;&lt;b style="color: #F58220"&gt;Tài khoản của tôi&lt;/b&gt;&lt;/a&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;div style="padding: 10px; background: #F7F7F7;"&gt;
+            &lt;table style="border-top: 1px solid #F58220; width: 100%;"&gt;
+                &lt;tr&gt;
+                    &lt;td style="text-align: center;"&gt;
+                        &lt;strong style="font-size: 16px; color: #F58220"&gt;Chúc mừng {0} đặt hàng trên Dealtoday.vn&lt;/strong&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td style="text-align: center; font-size: 10px; color: #F58220"&gt;
+                        Đây là email tự động gửi từ hệ thống. Quý khách vui lòng không trả lời vào email
+                        này.
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;p style="font-size: 12px"&gt;
+                Cảm ơn Quý khách đã đặt mua Deal trên Dealtoday.vn. Đơn hàng của Quý khách đang
+                được xử lý và xác nhận thông tin. Để thuận tiện trong quá trình xử lý, Dealtoday.vn
+                sẽ chỉ gọi lại cho Quý khách trong trường hợp có trục trặc với đơn hàng hoặc cần
+                xác nhận thêm thông tin.
+            &lt;/p&gt;
+            &lt;p style="font-size: 12px"&gt;
+                Sau khi xác nhận hoàn tất thông tin đơn hàng và thanh toán, mã e-deals sẽ gửi đến
+                Email/SMS/Apps của quý khách hàng. Xin vui lòng kiểm tra Email và SMS thường xuyên.&lt;/p&gt;
+            &lt;p style="font-size: 12px;"&gt;
+                &lt;span&gt;&lt;b&gt;Mã đơn hàng: &lt;/b&gt;{1}&lt;/span&gt; (&lt;a href="https://www.dealtoday.vn/theo-doi-don-hang"
+                    style="color: #0000FF"&gt;Kiểm tra tình trạng đơn hàng&lt;/a&gt;)&lt;br&gt;
+                &lt;span&gt;&lt;b&gt;Phương thức thanh toán: &lt;/b&gt;{2}&lt;/span&gt;&lt;br&gt;
+                &lt;span&gt;&lt;b&gt;Tình trạng thanh toán: &lt;/b&gt;&lt;span style="color: rgb(255, 102, 0)"&gt;{3}&lt;/span&gt;&lt;/span&gt;
+            &lt;/p&gt;
+            &lt;p style="font-size: 12px"&gt;
+                &lt;b&gt;Chi tiết đơn hàng:&lt;/b&gt;&lt;/p&gt;
+            &lt;table class="order-detail" style="border-collapse: collapse; width: 100%;"&gt;
+                &lt;tr&gt;
+                    &lt;td style="border: 1px solid #555;"&gt;
+                        &lt;b&gt;STT&lt;/b&gt;
+                    &lt;/td&gt;
+                    &lt;td style="border: 1px solid #555;"&gt;
+                        &lt;b&gt;Tên Deal&lt;/b&gt;
+                    &lt;/td&gt;
+                    &lt;td style="border: 1px solid #555;"&gt;
+                        &lt;b&gt;Đơn giá&lt;/b&gt;
+                    &lt;/td&gt;
+                    &lt;td style="border: 1px solid #555;"&gt;
+                        &lt;b&gt;Số lượng&lt;/b&gt;
+                    &lt;/td&gt;
+                    &lt;td style="border: 1px solid #555;"&gt;
+                        &lt;b&gt;Thành tiền&lt;/b&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+                {4}
+                &lt;tr&gt;
+                    &lt;td colspan="3"&gt;
+                    &lt;/td&gt;
+                    &lt;td colspan="2" style="font-size: 12px;"&gt;
+                        &lt;br /&gt;
+                        Tổng tiền hàng: {5} đ
+                        &lt;br /&gt;
+                        {6}
+                        &lt;!--Phí thu tiền COD: {5} đ&lt;br /&gt;--&gt;
+                        &lt;b&gt;Tổng tiền thanh toán: {7} đ&lt;/b&gt;
+                        &lt;br /&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td colspan="5" style="font-size: 12px;"&gt;
+                        &lt;!--&lt;b&gt;Địa chỉ thu tiền COD: &lt;/b&gt;&lt;br /&gt;--&gt;
+                        {8}
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;table style="margin: 15px 0; border-top: 1px dashed #BBBBBB; border-bottom: 1px solid #BBBBBB;
+                padding: 20px 0; width: 100%;"&gt;
+                &lt;tr&gt;
+                    &lt;td style="font-size: 12px; color: #F58220; text-align: left"&gt;
+                        Quý khách còn cần giải đáp thắc mắc, vui lòng xem thêm ở &lt;a href="https://www.dealtoday.vn/tin-tuc/Cau-hoi-thuong-gap-253"
+                            style="color: #4d00ee"&gt;câu hỏi thường gặp&lt;/a&gt;
+                        &lt;br&gt;
+                        Hoặc gọi số &lt;b style="color: #F58220"&gt;Hotline 1900 2065&lt;/b&gt; để được tư vấn thêm.
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td style="padding: 10px 0; text-align: center;"&gt;
+                        &lt;a href="#"&gt;
+                            &lt;img src="https://cdn.dealtoday.vn/dealtodayvnmailimg/facebook.png" alt=""&gt;&lt;/a&gt;
+                        &lt;a href="#"&gt;
+                            &lt;img src="https://cdn.dealtoday.vn/dealtodayvnmailimg/twitter.png" alt=""&gt;&lt;/a&gt;
+                        &lt;a href="#"&gt;
+                            &lt;img src="https://cdn.dealtoday.vn/dealtodayvnmailimg/linkedin.png" alt=""&gt;&lt;/a&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;table style="width: 100%;"&gt;
+                &lt;tr&gt;
+                    &lt;td style="font-size: 12px; color: #959595; line-height: 18px; text-align: center;"&gt;
+                        Dealtoday.vn - Một sản phẩm của &lt;strong style="color: #959595"&gt;EBIS International E-commerce&lt;/strong&gt;
+                        &lt;br&gt;
+                        &lt;strong style="color: #959595"&gt;CÔNG TY CỔ PHẦN DỊCH VỤ VÀ THƯƠNG MẠI ĐIỆN TỬ QUỐC TẾ
+                            EBIS&lt;/strong&gt;
+                        &lt;br&gt;
+                        Trụ sở: Phòng 505, Tầng 5, Tòa nhà số 18 Ngõ 11, Thái Hà, Phường Trung Liệt, Quận Đống Đa, Hà Nội
+                        &lt;br /&gt;
+                        Điện thoại/Fax: +84.4.3518.7799 - Email: hotro@dealtoday.vn ﻿
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</value>
+    <comment>Gui email khi khach hang dat hang thanh cong</comment>
+  </data>
+  <data name="Email_CheckoutSuccess_V2" xml:space="preserve">
+    <value>&lt;div style="width: 100%; overflow: hidden; background: #e6e7e8;"&gt;
+        &lt;table style="max-width: 600px; height: 43px; margin: 0 auto; width: 100%; background: #fff; border-spacing: 0px;"&gt;
+            &lt;tr&gt;
+                &lt;td style="width: 50%; padding-left: 43px;"&gt;&lt;a href="http://dealtoday.vn"&gt;
+                    &lt;img src="http://dealtoday.vn/asset/images/logo.png" alt="dealtoday.vn" /&gt;&lt;/a&gt;&lt;/td&gt;
+                &lt;td style="width: 50%; padding-right: 45px; text-align: right; font-family: Arial; font-size: 11px; color: #555;"&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td colspan="2" style="text-align: center; font-size: 16px; border-top: 2px solid #f7941d; padding: 20px 0 20px 0; font-family: Arial; color: #555; font-weight: bold;"&gt;XÁC NHẬN ĐẶT HÀNG&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td colspan="2" style="font-family: Arial; font-size: 14px; color: #555; line-height: 30px; padding: 0 40px"&gt;
+                    &lt;span style="line-height: 20px; display: block"&gt;Cám ơn &lt;b&gt;{0}&lt;/b&gt; đã đặt mua Deal tại &lt;a href="http://dealtoday.vn" style="color: #f7941d"&gt;Dealtoday.vn&lt;/a&gt;!&lt;/span&gt;
+                    Đơn hàng của bạn đang ở trạng thái Chờ xác nhận.
+                    &lt;span style="line-height: 20px; display: block"&gt;Sau khi đơn hàng được xác nhận và thanh toán thành công. Chúng tôi sẽ gửi mã sử dụng tới bạn qua hình thức SMS, EMail và tài khoản cá nhân của bạn.&lt;/span&gt;
+                    &lt;table style="width: 100%; border-spacing: 0px;font-family: Arial; font-size: 14px; color: #555;"&gt;
+                        &lt;tr&gt;
+                            &lt;td style="padding: 10px 0;" colspan="2"&gt;&lt;b&gt;THÔNG TIN ĐẶT HÀNG&lt;/b&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td style="width: 200px"&gt;&lt;b&gt;Mã đơn hàng:&lt;/b&gt;&lt;/td&gt;
+                            &lt;td&gt;{1}&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;&lt;b&gt;Phương thức thanh toán:&lt;/b&gt;&lt;/td&gt;
+                            &lt;td&gt;{2}&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;&lt;b&gt;Trạng thái đơn hàng:&lt;/b&gt;&lt;/td&gt;
+                            &lt;td&gt;{3}&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td style="padding: 10px 0;" colspan="2"&gt;&lt;b&gt;THÔNG TIN NHẬN HÀNG&lt;/b&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;&lt;b&gt;Tên người nhận:&lt;/b&gt;&lt;/td&gt;
+                            &lt;td&gt;{4}&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;&lt;b&gt;Số điện thoại:&lt;/b&gt;&lt;/td&gt;
+                            &lt;td&gt;{5}&lt;/td&gt;
+                        &lt;/tr&gt;
+                        {6}
+                        &lt;tr&gt;
+                            &lt;td style="padding: 10px 0;" colspan="2"&gt;&lt;b&gt;CHI TIẾT ĐƠN HÀNG&lt;/b&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td colspan="2"&gt;
+                                &lt;table style="width: 100%; border-spacing:3px;  border-collapse: separate;font-family: Arial; font-size: 14px; color: #555;" &gt;
+                                    &lt;tr style="background: #f7941d; color: #fff; font-weight: bold;"&gt;
+                                        &lt;th style="width: 30px"&gt;Stt&lt;/th&gt;
+                                        &lt;th&gt;Tên Deal&lt;/th&gt;
+                                        &lt;th style="width: 80px"&gt;Đơn giá&lt;/th&gt;
+                                        &lt;th style="width: 20px"&gt;SL&lt;/th&gt;
+                                        &lt;th  style="width: 80px;"&gt;Thành tiền&lt;/th&gt;
+                                    &lt;/tr&gt;
+                                    {7}
+                                    &lt;tr style="background: #fff"&gt;
+                                        &lt;td&gt;&lt;/td&gt;
+                                        &lt;td&gt;&lt;b&gt;Tổng tiền hàng:&lt;/b&gt;&lt;/td&gt;
+                                        &lt;td&gt;&lt;/td&gt;
+                                        &lt;td&gt;&lt;/td&gt;
+                                        &lt;td style="text-align: right;"&gt;{8}đ&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    {9}
+                                    &lt;tr style="background: #fff"&gt;
+                                        &lt;td&gt;&lt;/td&gt;
+                                        &lt;td&gt;&lt;b&gt;Tổng tiền thanh toán:&lt;/b&gt;&lt;/td&gt;
+                                        &lt;td&gt;&lt;/td&gt;
+                                        &lt;td&gt;&lt;/td&gt;
+                                         &lt;td  style="text-align: right;"&gt;{10}đ&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                &lt;/table&gt;
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;span style="width: 100%; text-align: center; font-weight: bold; margin: 15px 0 0; display: inline-block;"&gt;ĐỪNG QUÊN&lt;/span&gt;
+                    &lt;br /&gt;
+                    &lt;span style="line-height: 20px; display: inline-block;"&gt;Cài đặt ứng dụng của Dealtoday ngay hôm nay để được hưởng những lợi ích tuyệt vời và bảo vệ ví tiền của bạn với cam kết "Deal thật - Khuyến mại thật"&lt;/span&gt;
+                    &lt;br /&gt;
+                    &lt;table style="width: 100%; display: block; padding: 10px 0; border-spacing: 0px;"&gt;
+                        &lt;tr&gt;
+                            &lt;td style="text-align: right; padding-right: 15px; margin-left: 147px; display: inline-block;"&gt;&lt;a href="https://itunes.apple.com/us/app/dealtoday/id1063926571"&gt;
+                                &lt;img src="http://cdn.dealtoday.vn/f7a2e68fddc54e2883f30ec460e58890.gif" alt="App Store" /&gt;&lt;/a&gt;&lt;/td&gt;
+                            &lt;td style="text-align: left; padding-left: 15px"&gt;&lt;a href="https://play.google.com/store/apps/details?id=vn.dealtoday.android"&gt;
+                                &lt;img src="http://cdn.dealtoday.vn/53e24caaf27c46fbbfba462b3fdfed15.gif" alt="Google Play" /&gt;&lt;/a&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table style="width: 100%; display: block; text-align: center; border-spacing: 0px;"&gt;
+                        &lt;tr&gt;
+                            &lt;td style="display: inline-block; margin: 0 5px 0 0px;"&gt;&lt;span style="height: 77px; width: 154px; border: 1px solid #dfdfdf; border-radius: 5px; text-align: center; display: inline-block; font-size: 12px;"&gt;
+                                &lt;a href="https://www.dealtoday.vn/theo-doi-don-hang" style="color: #555; text-decoration: none;"&gt;
+                                    &lt;img src="http://cdn.dealtoday.vn/5381fcd1911a4091970d3054c9b4f7fa.gif" style="display: block; margin: 0 auto; padding: 7px 0 0;" alt="TRA CỨU ĐƠN HÀNG" /&gt;TRA CỨU ĐƠN HÀNG&lt;/a&gt;
+                            &lt;/span&gt;&lt;/td&gt;
+                            &lt;td style="display: inline-block; margin: 0 10px 0;"&gt;&lt;span style="height: 77px; width: 154px; border: 1px solid #dfdfdf; border-radius: 5px; text-align: center; display: inline-block; font-size: 12px;"&gt;
+                                &lt;a href="https://www.dealtoday.vn/tin-tuc/chinh-sach-doi-tra-2166" style="color: #555; text-decoration: none;"&gt;
+                                    &lt;img src="http://cdn.dealtoday.vn/ef4cc0c9257146269136bd0f15a3ca16.gif" style="display: block; margin: 0 auto; padding: 7px 0 0;" alt="CHÍNH SÁCH ĐỔI TRẢ" /&gt;CHÍNH SÁCH ĐỔI TRẢ&lt;/a&gt;
+                            &lt;/span&gt;&lt;/td&gt;
+                            &lt;td style="display: inline-block; margin: 0 0 0 5px;"&gt;&lt;span style="height: 77px; width: 154px; border: 1px solid #dfdfdf; border-radius: 5px; text-align: center; display: inline-block; font-size: 12px;"&gt;
+                                &lt;a href="javascript:void(0);" style="color: #555; text-decoration: none;"&gt;
+                                    &lt;img src="http://cdn.dealtoday.vn/dd93f82dc6f14e5181677636d4e944b7.gif" style="display: block; margin: 0 auto; padding: 7px 0 0;" alt="CÂU HỎI THƯỜNG GẶP" /&gt;CÂU HỎI THƯỜNG GẶP&lt;/a&gt;
+                            &lt;/span&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;br /&gt;
+                    Nếu có thắc mắc, quý khách xin vui lòng liên hệ ngay với chúng tôi để được hỗ trợ kịp thời qua:&lt;br /&gt;
+                    &lt;span style="display: block; width: 100%; text-align: center; padding-bottom: 15px;"&gt;
+                        &lt;img src="http://cdn.dealtoday.vn/4e7667875b114b3498592530242e9f3b.gif" alt="Email hỗ trợ" style="padding-right: 5px" /&gt;
+                        Email hỗ trợ: &lt;a href="mailto:hotro@dealtoday.vn" style="font-size: 16px; font-weight: bold; color: #f7941d; text-decoration: none;"&gt;hotro@dealtoday.vn&lt;/a&gt;&lt;br /&gt;
+                        &lt;img src="http://cdn.dealtoday.vn/3674d465f9e24d49ab0286b6a3dce74e.gif" alt="Tổng đài chăm sóc khách hàng" style="padding-right: 5px" /&gt;
+                        Tổng đài chăm sóc khách hàng: &lt;a href="mailto:hotro@dealtoday.vn" style="font-size: 16px; font-weight: bold; color: #f7941d; text-decoration: none;"&gt;1900 2065&lt;/a&gt;
+                    &lt;/span&gt;
+
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td colspan="2" style="padding: 0"&gt;
+                    &lt;table style="width: 100%; display: block; padding: 15px 0; background: #f5f5f5; font-family: Arial; font-size: 14px; color: #555; border-spacing: 0px; border-bottom: 5px solid #f7941d;"&gt;
+                        &lt;tr&gt;
+                            &lt;td style="text-align: center; width: 100%;"&gt;
+                                &lt;span style="text-align: center; width: 100%; display: block;"&gt;
+                                    &lt;a href="https://www.facebook.com/dealtoday.vn"&gt;
+                                        &lt;img src="http://cdn.dealtoday.vn/6251c5f8a30a47bca802b4660afe82db.gif" alt="facebook" style="padding: 0 30px 0;" /&gt;&lt;/a&gt;
+                                    &lt;a href="https://www.youtube.com/channel/UCN6bZgO3o7Y3CGvvsBnIkEw"&gt;
+                                        &lt;img src="http://cdn.dealtoday.vn/76c88316ae284c39a56fa2d58f845cbe.gif" alt="youtube" style="padding: 0 30px 0 0;" /&gt;&lt;/a&gt;
+                                    &lt;a href="https://plus.google.com/+DealtodayVnEBIS"&gt;
+                                        &lt;img src="http://cdn.dealtoday.vn/fb7d91c61bde4104889fc11749d5c3f5.gif" alt="google plus" /&gt;&lt;/a&gt;
+                                &lt;/span&gt;
+                                &lt;br /&gt;
+                                © Công ty Cổ phần Dịch vụ và Thương mại Điện tử Quốc tế EBIS
+                        &lt;br /&gt;
+                                &lt;span style="line-height: 20px; display: block; padding: 10px 0;"&gt;&lt;b&gt;Trụ sở chính&lt;/b&gt;: Phòng 505, Tầng 5, Tòa nhà số 18 Ngõ 11, Thái Hà, Phường Trung Liệt, Quận Đống Đa, Hà Nội
+                                &lt;br /&gt;
+                                    &lt;b&gt;Văn phòng HCM&lt;/b&gt;: Tầng 9, Tòa nhà L'MAK, Số 70, Phạm Ngọc Thạch, Phường 06, Quận 03, TP.HCM &lt;br /&gt;
+                                &lt;/span&gt;
+                                &lt;span style="line-height: 20px; display: block"&gt;Giấy chứng nhận đăng ký kinh doanh số 0102225186 - Do Sở Kế hoạch Đầu Tư Hà Nội cấp ngày 18/04/2007 &lt;/span&gt;
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/table&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+
+        &lt;/table&gt;
+    &lt;/div&gt;</value>
+    <comment>Gui Email xac nhan don hang khi dat hang thanh cong</comment>
+  </data>
+  <data name="Golf_ComfirmationSMS" xml:space="preserve">
+    <value>Cam on QK da dat san golf tai Dealtoday.vn. DH {0}. Chung toi se dat san va lien he lai voi QK trong thoi gian som nhat LH: 19002065</value>
+    <comment>Gui tin nhan xac nhan thanh toan va dat golf thanh cong</comment>
+  </data>
+  <data name="Golf_ConfirmationEmail" xml:space="preserve">
+    <value>&lt;div style="width: 100%; overflow: hidden; background: #e6e7e8;"&gt;
+        &lt;table style="max-width: 600px; height: 43px; margin: 0 auto; width: 100%; background: #fff; border-spacing: 0px;"&gt;
+            &lt;tr&gt;
+                &lt;td style="width: 50%; padding-left: 43px;"&gt;&lt;a href="http://dealtoday.vn"&gt;
+                    &lt;img src="http://dealtoday.vn/asset/images/logo.png" alt="dealtoday.vn" /&gt;&lt;/a&gt;&lt;/td&gt;
+                &lt;td style="width: 50%; padding-right: 45px; text-align: right; font-family: Arial; font-size: 11px; color: #555;"&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td colspan="2" style="text-align: center; font-size: 16px; border-top: 2px solid #f7941d; padding: 20px 0 20px 0; font-family: Arial; color: #555; font-weight: bold;"&gt;XÁC NHẬN ĐẶT SÂN&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td colspan="2" style="font-family: Arial; font-size: 14px; color: #555; line-height: 30px; padding: 0 40px"&gt;
+                    &lt;span style="line-height: 20px; display: block"&gt;Cám ơn quý khách đã đặt sân golf tại &lt;a href="http://dealtoday.vn" style="color: #f7941d"&gt;Dealtoday.vn&lt;/a&gt;!&lt;/span&gt;
+                    Mã đơn hàng: {0}. Chúng tôi sẽ tiến hành đặt sân và liên hệ với quý khách trong thời gian sớm nhất.
+                    
+                    &lt;table style="width: 100%; border-spacing: 0px;font-family: Arial; font-size: 14px; color: #555;"&gt;
+                        &lt;tr&gt;
+                            &lt;td style="padding: 10px 0;" colspan="2"&gt;&lt;b&gt;THÔNG TIN ĐẶT HÀNG&lt;/b&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td style="width: 200px"&gt;&lt;b&gt;Mã đơn hàng:&lt;/b&gt;&lt;/td&gt;
+                            &lt;td&gt;{1}&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;&lt;b&gt;Phương thức thanh toán:&lt;/b&gt;&lt;/td&gt;
+                            &lt;td&gt;{2}&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;&lt;b&gt;Trạng thái đơn hàng:&lt;/b&gt;&lt;/td&gt;
+                            &lt;td&gt;{3}&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td style="padding: 10px 0;" colspan="2"&gt;&lt;b&gt;THÔNG TIN ĐẶT SÂN&lt;/b&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;&lt;b&gt;Tên người đặt:&lt;/b&gt;&lt;/td&gt;
+                            &lt;td&gt;{4}&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;&lt;b&gt;Số điện thoại:&lt;/b&gt;&lt;/td&gt;
+                            &lt;td&gt;{5}&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;&lt;b&gt;Thời gian chơi:&lt;/b&gt;&lt;/td&gt;
+                            &lt;td&gt;{6}&lt;/td&gt;
+                        &lt;/tr&gt;
+                        
+                        &lt;tr&gt;
+                            &lt;td style="padding: 10px 0;" colspan="2"&gt;&lt;b&gt;THÔNG TIN ĐƠN HÀNG&lt;/b&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td colspan="2"&gt;
+                                &lt;table style="width: 100%; border-spacing:3px;  border-collapse: separate;font-family: Arial; font-size: 14px; color: #555;" &gt;
+                                    &lt;tr style="background: #f7941d; color: #fff; font-weight: bold;"&gt;
+                                        &lt;th style="width: 30px"&gt;Stt&lt;/th&gt;
+                                        &lt;th&gt;Tên Sân&lt;/th&gt;
+                                        &lt;th style="width: 80px"&gt;Đơn giá&lt;/th&gt;
+                                        &lt;th style="width: 20px"&gt;SL&lt;/th&gt;
+                                        &lt;th  style="width: 80px;"&gt;Thành tiền&lt;/th&gt;
+                                    &lt;/tr&gt;
+                                    {7}
+                                    &lt;tr style="background: #fff"&gt;
+                                        &lt;td&gt;&lt;/td&gt;
+                                        &lt;td&gt;&lt;b&gt;Tổng tiền:&lt;/b&gt;&lt;/td&gt;
+                                        &lt;td&gt;&lt;/td&gt;
+                                        &lt;td&gt;&lt;/td&gt;
+                                        &lt;td style="text-align: right;"&gt;{8}đ&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    {9}
+                                    &lt;tr style="background: #fff"&gt;
+                                        &lt;td&gt;&lt;/td&gt;
+                                        &lt;td&gt;&lt;b&gt;Tổng tiền thanh toán:&lt;/b&gt;&lt;/td&gt;
+                                        &lt;td&gt;&lt;/td&gt;
+                                        &lt;td&gt;&lt;/td&gt;
+                                         &lt;td  style="text-align: right;"&gt;{10}đ&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                &lt;/table&gt;
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;span style="width: 100%; text-align: center; font-weight: bold; margin: 15px 0 0; display: inline-block;"&gt;ĐỪNG QUÊN&lt;/span&gt;
+                    &lt;br /&gt;
+                    &lt;span style="line-height: 20px; display: inline-block;"&gt;Cài đặt ứng dụng của Dealtoday ngay hôm nay để được hưởng những lợi ích tuyệt vời và bảo vệ ví tiền của bạn với cam kết "Deal thật - Khuyến mại thật"&lt;/span&gt;
+                    &lt;br /&gt;
+                    &lt;table style="width: 100%; display: block; padding: 10px 0; border-spacing: 0px;"&gt;
+                        &lt;tr&gt;
+                            &lt;td style="text-align: right; padding-right: 15px; margin-left: 147px; display: inline-block;"&gt;&lt;a href="https://itunes.apple.com/us/app/dealtoday/id1063926571"&gt;
+                                &lt;img src="http://cdn.dealtoday.vn/f7a2e68fddc54e2883f30ec460e58890.gif" alt="App Store" /&gt;&lt;/a&gt;&lt;/td&gt;
+                            &lt;td style="text-align: left; padding-left: 15px"&gt;&lt;a href="https://play.google.com/store/apps/details?id=vn.dealtoday.android"&gt;
+                                &lt;img src="http://cdn.dealtoday.vn/53e24caaf27c46fbbfba462b3fdfed15.gif" alt="Google Play" /&gt;&lt;/a&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;table style="width: 100%; display: block; text-align: center; border-spacing: 0px;"&gt;
+                        &lt;tr&gt;
+                            &lt;td style="display: inline-block; margin: 0 5px 0 0px;"&gt;&lt;span style="height: 77px; width: 154px; border: 1px solid #dfdfdf; border-radius: 5px; text-align: center; display: inline-block; font-size: 12px;"&gt;
+                                &lt;a href="https://www.dealtoday.vn/theo-doi-don-hang" style="color: #555; text-decoration: none;"&gt;
+                                    &lt;img src="http://cdn.dealtoday.vn/5381fcd1911a4091970d3054c9b4f7fa.gif" style="display: block; margin: 0 auto; padding: 7px 0 0;" alt="TRA CỨU ĐƠN HÀNG" /&gt;TRA CỨU ĐƠN HÀNG&lt;/a&gt;
+                            &lt;/span&gt;&lt;/td&gt;
+                            &lt;td style="display: inline-block; margin: 0 10px 0;"&gt;&lt;span style="height: 77px; width: 154px; border: 1px solid #dfdfdf; border-radius: 5px; text-align: center; display: inline-block; font-size: 12px;"&gt;
+                                &lt;a href="https://www.dealtoday.vn/tin-tuc/chinh-sach-doi-tra-2166" style="color: #555; text-decoration: none;"&gt;
+                                    &lt;img src="http://cdn.dealtoday.vn/ef4cc0c9257146269136bd0f15a3ca16.gif" style="display: block; margin: 0 auto; padding: 7px 0 0;" alt="CHÍNH SÁCH ĐỔI TRẢ" /&gt;CHÍNH SÁCH ĐỔI TRẢ&lt;/a&gt;
+                            &lt;/span&gt;&lt;/td&gt;
+                            &lt;td style="display: inline-block; margin: 0 0 0 5px;"&gt;&lt;span style="height: 77px; width: 154px; border: 1px solid #dfdfdf; border-radius: 5px; text-align: center; display: inline-block; font-size: 12px;"&gt;
+                                &lt;a href="javascript:void(0);" style="color: #555; text-decoration: none;"&gt;
+                                    &lt;img src="http://cdn.dealtoday.vn/dd93f82dc6f14e5181677636d4e944b7.gif" style="display: block; margin: 0 auto; padding: 7px 0 0;" alt="CÂU HỎI THƯỜNG GẶP" /&gt;CÂU HỎI THƯỜNG GẶP&lt;/a&gt;
+                            &lt;/span&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/table&gt;
+                    &lt;br /&gt;
+                    Nếu có thắc mắc, quý khách xin vui lòng liên hệ ngay với chúng tôi để được hỗ trợ kịp thời qua:&lt;br /&gt;
+                    &lt;span style="display: block; width: 100%; text-align: center; padding-bottom: 15px;"&gt;
+                        &lt;img src="http://cdn.dealtoday.vn/4e7667875b114b3498592530242e9f3b.gif" alt="Email hỗ trợ" style="padding-right: 5px" /&gt;
+                        Email hỗ trợ: &lt;a href="mailto:hotro@dealtoday.vn" style="font-size: 16px; font-weight: bold; color: #f7941d; text-decoration: none;"&gt;hotro@dealtoday.vn&lt;/a&gt;&lt;br /&gt;
+                        &lt;img src="http://cdn.dealtoday.vn/3674d465f9e24d49ab0286b6a3dce74e.gif" alt="Tổng đài chăm sóc khách hàng" style="padding-right: 5px" /&gt;
+                        Tổng đài chăm sóc khách hàng: &lt;a href="mailto:hotro@dealtoday.vn" style="font-size: 16px; font-weight: bold; color: #f7941d; text-decoration: none;"&gt;1900 2065&lt;/a&gt;
+                    &lt;/span&gt;
+
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td colspan="2" style="padding: 0"&gt;
+                    &lt;table style="width: 100%; display: block; padding: 15px 0; background: #f5f5f5; font-family: Arial; font-size: 14px; color: #555; border-spacing: 0px; border-bottom: 5px solid #f7941d;"&gt;
+                        &lt;tr&gt;
+                            &lt;td style="text-align: center; width: 100%;"&gt;
+                                &lt;span style="text-align: center; width: 100%; display: block;"&gt;
+                                    &lt;a href="https://www.facebook.com/dealtoday.vn"&gt;
+                                        &lt;img src="http://cdn.dealtoday.vn/6251c5f8a30a47bca802b4660afe82db.gif" alt="facebook" style="padding: 0 30px 0;" /&gt;&lt;/a&gt;
+                                    &lt;a href="https://www.youtube.com/channel/UCN6bZgO3o7Y3CGvvsBnIkEw"&gt;
+                                        &lt;img src="http://cdn.dealtoday.vn/76c88316ae284c39a56fa2d58f845cbe.gif" alt="youtube" style="padding: 0 30px 0 0;" /&gt;&lt;/a&gt;
+                                    &lt;a href="https://plus.google.com/+DealtodayVnEBIS"&gt;
+                                        &lt;img src="http://cdn.dealtoday.vn/fb7d91c61bde4104889fc11749d5c3f5.gif" alt="google plus" /&gt;&lt;/a&gt;
+                                &lt;/span&gt;
+                                &lt;br /&gt;
+                                © Công ty Cổ phần Dịch vụ và Thương mại Điện tử Quốc tế EBIS
+                        &lt;br /&gt;
+                                &lt;span style="line-height: 20px; display: block; padding: 10px 0;"&gt;&lt;b&gt;Trụ sở chính&lt;/b&gt;: Phòng 505, Tầng 5, Tòa nhà số 18 Ngõ 11, Thái Hà, Phường Trung Liệt, Quận Đống Đa, Hà Nội
+                                &lt;br /&gt;
+                                    &lt;b&gt;Văn phòng HCM&lt;/b&gt;: Tầng 9, Tòa nhà L'MAK, Số 70, Phạm Ngọc Thạch, Phường 06, Quận 03, TP.HCM &lt;br /&gt;
+                                &lt;/span&gt;
+                                &lt;span style="line-height: 20px; display: block"&gt;Giấy chứng nhận đăng ký kinh doanh số 0102225186 - Do Sở Kế hoạch Đầu Tư Hà Nội cấp ngày 18/04/2007 &lt;/span&gt;
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/table&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+			
+        &lt;/table&gt;
+    &lt;/div&gt;</value>
+    <comment>Gui Email xac nhan thanh toan va dat golf thanh cong</comment>
+  </data>
+  <data name="SMS_CheckoutSuccess" xml:space="preserve">
+    <value>Cam on Quy khach dat mua tren Dealtoday.vn. DH {0} tri gia {1} vnd dang duoc xu ly. LH: 19002065</value>
+    <comment>Gui tin nhan dat hang thanh cong cho khach hang</comment>
+  </data>
+</root>

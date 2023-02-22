@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GenerateAvatarThumnail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="url" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="width" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="height" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerateAvatarThumnailResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GenerateMobileThumnail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="url" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerateMobileThumnailResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GenerateAvatarThumnailSoapIn">
+    <wsdl:part name="parameters" element="tns:GenerateAvatarThumnail" />
+  </wsdl:message>
+  <wsdl:message name="GenerateAvatarThumnailSoapOut">
+    <wsdl:part name="parameters" element="tns:GenerateAvatarThumnailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GenerateMobileThumnailSoapIn">
+    <wsdl:part name="parameters" element="tns:GenerateMobileThumnail" />
+  </wsdl:message>
+  <wsdl:message name="GenerateMobileThumnailSoapOut">
+    <wsdl:part name="parameters" element="tns:GenerateMobileThumnailResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ImagesResizeSoap">
+    <wsdl:operation name="GenerateAvatarThumnail">
+      <wsdl:input message="tns:GenerateAvatarThumnailSoapIn" />
+      <wsdl:output message="tns:GenerateAvatarThumnailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerateMobileThumnail">
+      <wsdl:input message="tns:GenerateMobileThumnailSoapIn" />
+      <wsdl:output message="tns:GenerateMobileThumnailSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ImagesResizeSoap" type="tns:ImagesResizeSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GenerateAvatarThumnail">
+      <soap:operation soapAction="http://tempuri.org/GenerateAvatarThumnail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateMobileThumnail">
+      <soap:operation soapAction="http://tempuri.org/GenerateMobileThumnail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ImagesResizeSoap12" type="tns:ImagesResizeSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GenerateAvatarThumnail">
+      <soap12:operation soapAction="http://tempuri.org/GenerateAvatarThumnail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateMobileThumnail">
+      <soap12:operation soapAction="http://tempuri.org/GenerateMobileThumnail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ImagesResize">
+    <wsdl:port name="ImagesResizeSoap" binding="tns:ImagesResizeSoap">
+      <soap:address location="http://123.29.68.150:9339/ImagesResize.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ImagesResizeSoap12" binding="tns:ImagesResizeSoap12">
+      <soap12:address location="http://123.29.68.150:9339/ImagesResize.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
